@@ -35,3 +35,9 @@ const fs = require('fs');
 //     console.log('Contenido reemplazado exitosamente');
 // });
 
+fs.unlink('main.html', (err) => {
+    if (err) {
+        throw err;
+    }
+    console.log('Archivo eliminado');
+});
